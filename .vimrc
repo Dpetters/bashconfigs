@@ -7,9 +7,6 @@ set ignorecase
 " Automatically detect file type
 filetype plugin indent on
 
-" Turn on spell checking
-set spell
-
 " Set a ton of history. Default is 20
 set history=1000
 
