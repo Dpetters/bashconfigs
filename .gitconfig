@@ -1,7 +1,10 @@
 [user]
-	name = Dmitrij Petters
-	email = Dpetters91@gmail.com
+    name = Dmitrij Petters
+    email = Dpetters91@gmail.com
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [merge]
-	tool = vimdiff
+    tool = vimdiff
+[difftool]
+    prompt = false
+
