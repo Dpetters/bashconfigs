@@ -1,4 +1,1 @@
-.configs
-========
-
-Config Files
+Personal Config Files
