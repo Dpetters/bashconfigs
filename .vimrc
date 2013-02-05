@@ -4,6 +4,13 @@ set gdefault
 " Case insensitive search
 set ignorecase
 
+" ,y saves current unnamed buffer to ~/reg.txt file.
+" ,p / ,P read from ~/reg.txt and paste using p/P.
+vmap <silent> ,y y:new<CR>:call setline(1,getregtype())<CR>o<Esc>P:wq! ~/reg.txt<CR>
+nmap <silent> ,y :new<CR>:call setline(1,getregtype())<CR>o<Esc>P:wq! ~/reg.txt<CR>
+map <silent> ,p :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>p
+map <silent> ,P :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>P
+
 " Automatically detect file type
 filetype plugin indent on
 
