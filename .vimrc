@@ -29,7 +29,7 @@ syntax on
 " Tab settings
 :set expandtab
 :set tabstop=2
-:set shiftwidth=4
+:set shiftwidth=2
 " Change all existing tabs to match above settings
 :retab
 
@@ -39,3 +39,7 @@ set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
 set tags=./tags;/
+
+let g:JavaImpDataDir = "$HOME/vim/JavaImp"
+
+:autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
