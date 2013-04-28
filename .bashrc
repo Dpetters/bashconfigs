@@ -115,3 +115,10 @@ export EDITOR=vim
 
 # Don't search for packages by default. Instead we alias a "packages-providing" command
 unset command_not_found_handle
+
+# android
+export ANDROID_SDK_HOME="/opt/google/android/sdk"
+export PATH="$ANDROID_SDK_HOME/platform-tools/:$ANDROID_SDK_HOME/tools/:$PATH"
+
+# java
+export PATH="$JAVA_HOME/bin:$PATH" 

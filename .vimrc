@@ -40,6 +40,12 @@ set foldlevel=1         "this is just what i use
 
 set tags=./tags;/
 
+let g:JavaImpPaths = ""
 let g:JavaImpDataDir = "$HOME/vim/JavaImp"
 
+" Highlight all occurences of word under cursor
 :autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+
+" 120 character column indication
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%121v.\+/

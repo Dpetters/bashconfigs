@@ -10,3 +10,5 @@
 
 [credential]
 	helper = cache
+[push]
+	default = simple
