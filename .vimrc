@@ -27,11 +27,12 @@ set background=dark
 syntax on
 
 " Tab settings
-:set expandtab
-:set tabstop=2
-:set shiftwidth=2
+set smartindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
 " Change all existing tabs to match above settings
-:retab
+retab
 
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
@@ -40,12 +41,10 @@ set foldlevel=1         "this is just what i use
 
 set tags=./tags;/
 
-let g:JavaImpPaths = ""
+let g:JavaImpPaths = "/opt/oracle/java/jdk1.7.0_21"
 let g:JavaImpDataDir = "$HOME/vim/JavaImp"
 
 " Highlight all occurences of word under cursor
 :autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
-" 120 character column indication
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%121v.\+/
+set colorcolumn=120
