@@ -47,4 +47,9 @@ let g:JavaImpDataDir = "$HOME/vim/JavaImp"
 " Highlight all occurences of word under cursor
 :autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
+" Color column to help stay within characters per line limit "
 set colorcolumn=120
+
+" Allow wrapping of lines at 120 characters"
+set formatoptions+=w
+set tw=80
