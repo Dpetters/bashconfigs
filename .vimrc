@@ -48,8 +48,8 @@ let g:JavaImpDataDir = "$HOME/vim/JavaImp"
 :autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 " Color column to help stay within characters per line limit "
-set colorcolumn=120
+set colorcolumn=121
 
-" Allow wrapping of lines at 120 characters"
-set formatoptions+=w
-set tw=80
+" Wrap 
+set tw=119
+nnoremap Q gqip
