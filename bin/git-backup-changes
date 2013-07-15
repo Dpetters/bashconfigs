@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+if __FILE__ == $0
+        branch_name = `git rev-parse --abbrev-ref HEAD`.split('/').last.chomp if branch_name.nil? 
+        `git diff HEAD > ~/Dropbox/backup/git-repos/#{branch_name}-uncommitted.patch`
+        puts "Backed up uncommitted  #{branch_name} branch changes"
+end

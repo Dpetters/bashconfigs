@@ -53,3 +53,6 @@ set colorcolumn=121
 " Wrap 
 set tw=119
 nnoremap Q gqip
+
+" Backup uncommitted changes to a dropbox file
+autocmd BufWritePost * execute '! if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1 ; then git-backup-changes; fi'

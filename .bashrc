@@ -121,4 +121,7 @@ export ANDROID_SDK_HOME="/opt/google/android/sdk"
 export PATH="$ANDROID_SDK_HOME/platform-tools/:$ANDROID_SDK_HOME/tools/:$PATH"
 
 # java
-export PATH="$JAVA_HOME/bin:$PATH" 
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# custom scripts
+export PATH="$HOME/bin:$PATH"
