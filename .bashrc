@@ -124,3 +124,5 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 # custom scripts
 export PATH="$HOME/bin:$PATH"
+
+alias ocaml='rlwrap ocaml'
