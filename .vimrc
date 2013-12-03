@@ -43,6 +43,7 @@ set tags=./tags;/
 
 let g:JavaImpPaths = "/opt/oracle/java/jdk1.7.0_21"
 let g:JavaImpDataDir = "$HOME/vim/JavaImp"
+let g:JavaImpSortPkgSep = 1
 
 " Highlight all occurences of word under cursor
 :autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
