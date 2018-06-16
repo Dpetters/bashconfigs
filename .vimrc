@@ -39,12 +39,6 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
-set tags=./tags;/
-
-let g:JavaImpPaths = "/opt/oracle/java/jdk1.7.0_21"
-let g:JavaImpDataDir = "$HOME/vim/JavaImp"
-let g:JavaImpSortPkgSep = 1
-
 " Highlight all occurences of word under cursor
 :autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
@@ -55,5 +49,6 @@ set colorcolumn=121
 set tw=119
 nnoremap Q gqip
 
-" Backup uncommitted changes to a dropbox file
-autocmd BufWritePost * execute '! if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1 ; then git-backup-changes; fi'
+" Turn off bell sound
+set vb
+set t_vb=
