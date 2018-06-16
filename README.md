@@ -1,1 +1,1 @@
-Personal Config Files
+Personal Bash Configuration Files
