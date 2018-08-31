@@ -122,8 +122,6 @@ export PATH="$HOME/bin:$PATH"
 LS_COLORS='di=1;35:'
 export LS_COLORS
 
-[[ $TERM != "screen" ]] && exec tmux
-
 # start ssh-agent and add id_rsa key
 env=~/.ssh/agent.env
 agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
