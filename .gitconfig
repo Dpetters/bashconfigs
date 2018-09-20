@@ -2,7 +2,7 @@
     name = Dmitrij Petters
     email = Dpetters91@gmail.com
 [core]
-    autocrlf=true
+	autocrlf = input
 [diff]
     tool = vimdiff
 [merge]
