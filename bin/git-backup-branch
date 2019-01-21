@@ -1,9 +1,0 @@
-#!/usr/bin/env ruby
-if __FILE__ == $0
-        branch_name = ARGV[0] if (ARGV[0])
-        branch_name = `git rev-parse --abbrev-ref HEAD`.split('/').last.chomp if branch_name.nil? 
-        file_name = branch_name + "-unpushed.git.bundle"
-        `git bundle create ~/Dropbox/backup/git-repos/#{file_name} origin..HEAD`
-        puts "Backed up unpushed #{branch_name} branch commits"
-end
-
