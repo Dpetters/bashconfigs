@@ -1,16 +1,15 @@
 [user]
-    name = Dmitrij Petters
-    email = Dpetters91@gmail.com
+	name = Dmitrij Petters
+	email = dpetters@users.noreply.github.com
 [core]
 	autocrlf = input
 [diff]
     tool = vimdiff
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 [difftool]
     prompt = false
-
 [credential]
 	helper = cache
 [push]
-	default = matching
+	default = current

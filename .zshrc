@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":/usr/local/bin:/usr/local/opt/ruby/bin:$HOME/bin:/usr/local/bin:~/miniconda3/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/dpetters/.oh-my-zsh"
@@ -94,3 +94,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [ -f ~/.zshrc_local ]; then
+  . ~/.zshrc_local
+fi

@@ -52,3 +52,6 @@ nnoremap Q gqip
 " Turn off bell sound
 set vb
 set t_vb=
+
+set number
+set clipboard=unnamed
