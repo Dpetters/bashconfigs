@@ -114,3 +114,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+bindkey -v
