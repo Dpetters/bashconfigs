@@ -1,3 +1,5 @@
+source "$HOME/tools/zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh"
+
 # If you come from bash you might have to change your $PATH.
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":/usr/local/bin:/usr/local/opt/ruby/bin:$HOME/bin:/usr/local/bin:~/miniconda3/bin:$PATH
 
