@@ -54,4 +54,9 @@ set vb
 set t_vb=
 
 set number
+
+packadd! dracula
+syntax enable
+colorscheme dracula
+
 set clipboard=unnamed
