@@ -128,6 +128,13 @@ bindkey "^[OB" down-line-or-beginning-search
 bindkey -M vicmd "k" up-line-or-beginning-search
 bindkey -M vicmd "j" down-line-or-beginning-search
 
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_15_HOME=$(/usr/libexec/java_home -v15)
+
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias java15='export JAVA_HOME=$JAVA_15_HOME'
+
+java15
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/dpetters/.sdkman"
