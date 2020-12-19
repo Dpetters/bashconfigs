@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 source "$HOME/tools/zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh"
 
 # If you come from bash you might have to change your $PATH.
@@ -132,13 +134,8 @@ alias java15='export JAVA_HOME=$JAVA_15_HOME'
 
 java15
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/dpetters/.sdkman"
-[[ -s "/Users/dpetters/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dpetters/.sdkman/bin/sdkman-init.sh"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 if [ -f ~/.zshrc_local ]; then
   . ~/.zshrc_local
 fi
+
+# zprof
