@@ -13,3 +13,5 @@
 	helper = cache
 [push]
 	default = current
+[pull]
+	rebase = false
